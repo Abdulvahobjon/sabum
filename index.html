@@ -21,7 +21,6 @@
         cursor: pointer;
       }
 
-
       .home {
         position: relative;
         padding-bottom: 20px;
@@ -301,10 +300,33 @@
             <p class="homeTopTimeText">20:00</p>
           </div>
         </div>
+
+        <div class="homeTopMobile">
+          <p class="homeTopTimeText">
+            <img
+              width="23"
+              height="23"
+              src="./images/calendar.svg"
+              alt="kalendar"
+            />
+
+            30-iyul
+          </p>
+          <img src="./images/logo.svg" alt="logo" class="homeTopLogo" />
+          <p class="homeTopTimeText">20:00</p>
+        </div>
+
+        <p class="descText onlyMobile">
+          Qo‘qon markazidan bosh <span>to‘lovsiz</span>, <span>kredit</span>
+          <span>fozilarsiz</span> 60 oyga bo‘lib to‘lashga xonadonlar xarid
+          qilish imkoniyati
+        </p>
+
         <h1 class="homeTitle">
           Qo’qonda <span>bunaqasi</span> hali <span>bo’lmagan</span>
         </h1>
-        <p class="descText">
+
+        <p class="descText onlyDesktop">
           Qo‘qon markazidan bosh to‘lovsiz, kredit fozilarsiz 60 oyga bo‘lib
           to‘lashga xonadonlar xarid qilish imkoniyati
         </p>
@@ -317,9 +339,12 @@
           height="638"
         />
 
-        <button id="openModalBtn" class="homeSignUpBtn deskHidden">
+        <a
+          href="https://t.me/+E0Kxr8alhio5Nzky"
+          class="homeSignUpBtn deskHidden"
+        >
           <p>Bepul qatnashish</p>
-        </button>
+        </a>
         <div class="giftBox deskHidden">
           <img
             src="./images/gift.webp"
@@ -453,9 +478,9 @@
           </li>
         </ul>
 
-        <button id="openModalBtnMd" class="homeSignUpBtn">
+        <a href="https://t.me/+E0Kxr8alhio5Nzky" class="homeSignUpBtn mt-0">
           <p>Bepul qatnashish</p>
-        </button>
+        </a>
         <div class="giftBox mobileHidden">
           <img
             src="./images/gift.webp"

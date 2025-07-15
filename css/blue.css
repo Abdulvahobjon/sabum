@@ -221,6 +221,7 @@ button {
   border: 1px solid #bcbcbc;
   border-radius: 10px;
   margin-top: 34px;
+  width: 100%;
 }
 
 .giftImg {
@@ -245,27 +246,25 @@ button {
 .deskHidden {
   display: none;
 }
+.homeTopMobile {
+  display: none;
+}
 
 @media screen and (max-width: 900px) {
-  .mobileHidden {
-    display: none;
-  }
   .homeContainer {
     max-width: 700px;
   }
   .deskHidden {
     display: flex;
   }
-  .homeTop {
-    margin-bottom: 0px;
-  }
+
   .tabletMentor {
     display: block;
     width: 400px;
     object-fit: cover;
     object-position: top;
     height: 500px;
-    transform: translate(-20px);
+    transform: translate(20px);
   }
 
   .descText {
@@ -332,26 +331,50 @@ button {
 }
 
 @media (max-width: 768px) {
+  .homeContainer {
+    padding-top: 0;
+  }
+  .mobileHidden {
+    display: none;
+  }
+  .homeTop {
+    display: none;
+  }
+  .homeTopMobile {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 24px 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6.6px 0px #00000026;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .homeTopLogo {
+    width: 108px;
+  }
+  .homeTopTimeText {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
   .tabletMentor {
     width: 284px;
     object-fit: cover;
     height: 380px;
     object-position: top;
-    margin-top: -30px;
-    transform: translate(-30px);
+    margin-top: 0px;
+    transform: translate(20px);
   }
-  .homeTopLogo {
-    width: 150px;
-  }
+
   .homeTopLogoText {
     font-size: 16px;
   }
   .homeTopTime {
     gap: 15px;
   }
-  .homeTopTimeText {
-    font-size: 24px;
-  }
+
   .homeTopLine {
     height: 34px;
   }
@@ -362,14 +385,29 @@ button {
     display: none;
   }
 }
+.onlyMobile {
+  display: none;
+}
 
 @media (max-width: 480px) {
-  .homeTop {
-    gap: 20px;
-    margin-bottom: 10px;
+  .onlyMobile > span {
+    color: #023f72;
   }
-  .homeTopLogo {
-    width: 130px;
+  .onlyMobile {
+    display: block;
+  }
+  .onlyDesktop {
+    display: none;
+  }
+  .homeContainer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .homeTopMobile {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    justify-content: center;
   }
   .homeTopLogoText {
     display: none;
@@ -384,16 +422,22 @@ button {
   .giftBox {
     margin-bottom: 18px;
     gap: 11px;
-    padding-left: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 0px;
+    max-width: 345px;
+    width: 100%;
   }
 
   .giftImg {
     max-width: 50px;
+    height: 40px;
     object-fit: contain;
   }
 
   .gifyTitle {
     font-size: 11px;
+    line-height: 130%;
   }
 
   .homeContainer {
@@ -402,17 +446,19 @@ button {
   }
 
   .homeTitle {
-    font-size: 26px;
+    font-size: 38px;
     margin-bottom: 15px;
-    margin-top: 15px;
-    max-width: 294px;
+    margin-top: 0px;
     line-height: 32px;
   }
 
   .descText {
-    font-size: 16px;
+    font-size: 14px;
     padding-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 11px;
+    margin-top: 15px;
+    max-width: 269px;
+    font-weight: 600;
   }
 
   .homeSignUpBtn {
@@ -423,6 +469,10 @@ button {
     align-items: center;
     justify-content: center;
     margin-bottom: 11px;
+    margin-top: -66px;
+    border-radius: 30px;
+    padding: 12px;
+    height: auto;
   }
 
   .homeText {
@@ -432,13 +482,48 @@ button {
     padding-bottom: 12px;
   }
 
+  .homeList{
+    max-width: 345px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .homeListItem > svg {
-    min-width: 60px;
+    min-width: 33px;
+    width: 33px;
+    height: 33px;
   }
 
   .homeListItem {
-    font-size: 16px;
-    line-height: 24px;
-    align-items: center;
+    font-size: 13px;
+    line-height: 16px;
+    gap: 5px;
   }
+}
+
+@media (max-width: 375px) {
+  .homeTopTimeText {
+    font-size: 16px;
+  }
+  .homeTitle {
+    font-size: 32px;
+  }
+  .homeTopMobile {
+    gap: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 362px) {
+  .homeTitle {
+    font-size: 28px;
+  }
+  .giftBox{
+    padding-left: 10px;
+    padding-right: 0;
+  }
+}
+.mt-0 {
+  margin-top: 0;
 }
