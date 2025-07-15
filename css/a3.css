@@ -658,7 +658,7 @@ ul {
   .date__img {
     position: absolute;
     right: 0px;
-    top: 220px;
+    top: 270px;
     width: 217px;
     height: 314px;
   }
@@ -743,9 +743,6 @@ ul {
 }
 
 @media screen and (max-width: 375px) {
-  .date__inner-title {
-    font-size: 17px;
-  }
   .date__inner-info-text > br {
     display: none;
   }
