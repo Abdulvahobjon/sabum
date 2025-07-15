@@ -502,8 +502,14 @@ ul {
     height: 400px;
   }
 }
+.date__img{
+  display: none;
+}
 
 @media screen and (max-width: 768px) {
+  .date__img{
+    display: flex;
+  }
   .date{
     background-image: none;
   }
