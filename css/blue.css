@@ -1,0 +1,444 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: Neue Montreal;
+  src: url(../fonts/NeueMontreal-Bold.woff2);
+  font-display: swap;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Neue Montreal;
+  src: url(../fonts/NeueMontreal-Medium.woff2);
+  font-display: swap;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Neue Montreal;
+  src: url(../fonts/NeueMontreal-Regular.woff2);
+  font-display: swap;
+  font-weight: 400;
+}
+
+.home {
+  position: relative;
+  padding-bottom: 20px;
+  background-color: #ffffff;
+  background-image: url(../images/big-img.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+@media (max-width: 1460px) {
+  .home {
+    background-size: cover;
+  }
+}
+
+.homeContainer {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 33px 20px 60px;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.homeTop {
+  display: flex;
+  align-items: start;
+  gap: 34px;
+  margin-bottom: 38px;
+}
+
+.homeTopLogoText {
+  font-family: Neue Montreal, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  margin-top: 4px;
+}
+
+.homeTopTime {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.homeTopLine {
+  width: 5px;
+  height: 43px;
+  background-color: #000000;
+}
+
+.homeTopTimeText {
+  font-family: Neue Montreal, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+}
+
+.descText {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 100%;
+  color: black;
+  max-width: 552px;
+  margin-bottom: 38px;
+}
+
+.descText > span {
+  color: #f80000;
+}
+
+.homeTitle {
+  font-family: Neue Montreal, sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 95%;
+  max-width: 894px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.homeTitle span {
+  color: #023f72;
+}
+
+.homeText {
+  font-family: Neue Montreal, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  color: black;
+  margin-bottom: 9px;
+}
+
+.homeList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+  max-width: 620px;
+  margin-bottom: 30px;
+  background-color: transparent;
+}
+
+.homeListItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: Neue Montreal, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  color: #363f32;
+}
+
+.homeListItem > svg {
+  min-width: 69px;
+}
+
+.homeListItem > p > span {
+  color: #000000;
+}
+
+.homeSignUpBtn {
+  max-width: 578px;
+  width: 100%;
+  padding: 20px;
+  background: #344584;
+  border-radius: 50px;
+  font-family: Neue Montreal, sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 50px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: auto;
+  transition: transform 0.2s ease;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 103px;
+  border: none;
+}
+
+.homeSignUpBtn:hover {
+  transform: translateY(-2px);
+}
+
+.homeSignUpBtn:active {
+  transform: translateY(1px);
+}
+
+.homeSignUpBtn p {
+  position: relative;
+  z-index: 2;
+}
+
+.tabletMentor {
+  display: none;
+}
+
+.mdHidden {
+  display: none;
+}
+
+.giftBox {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  max-width: 578px;
+  padding: 8px 11px 8px 24px;
+  border: 1px solid #bcbcbc;
+  border-radius: 10px;
+  margin-top: 34px;
+}
+
+.giftImg {
+  max-width: 85px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.gifyTitle {
+  font-family: Neue Montreal;
+  font-weight: 500;
+  font-style: Bold;
+  font-size: 18px;
+  line-height: 180%;
+}
+
+.gifyTitle > b {
+  color: #024177;
+  font-weight: 700;
+}
+
+.deskHidden {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .mobileHidden {
+    display: none;
+  }
+  .homeContainer {
+    max-width: 700px;
+  }
+  .deskHidden {
+    display: flex;
+  }
+  .homeTop {
+    margin-bottom: 0px;
+  }
+  .tabletMentor {
+    display: block;
+    width: 400px;
+    object-fit: cover;
+    object-position: top;
+    height: 500px;
+    transform: translate(-20px);
+  }
+
+  .descText {
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 30px;
+  }
+
+  .mdHidden {
+    display: flex;
+  }
+
+  .homeContainer {
+    align-items: center;
+  }
+
+  .home {
+    background-image: none !important;
+  }
+
+  .homeTitle {
+    max-width: 580px;
+    margin: 30px auto 0px;
+    text-align: center;
+    font-size: 48px;
+    line-height: 42px;
+  }
+
+  .homeSignUpBtn {
+    width: 100%;
+    max-width: none;
+    padding: 13.5px 30px;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .maxMd_hidden {
+    display: none;
+  }
+
+  .homeText {
+    font-size: 20px;
+    line-height: 22px;
+    padding: 50px 0 20px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .homeList {
+    max-width: none;
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+  }
+
+  .homeListItem {
+    font-size: 16px;
+    line-height: 16px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .tabletMentor {
+    width: 284px;
+    object-fit: cover;
+    height: 380px;
+    object-position: top;
+    margin-top: -30px;
+    transform: translate(-30px);
+  }
+  .homeTopLogo {
+    width: 150px;
+  }
+  .homeTopLogoText {
+    font-size: 16px;
+  }
+  .homeTopTime {
+    gap: 15px;
+  }
+  .homeTopTimeText {
+    font-size: 24px;
+  }
+  .homeTopLine {
+    height: 34px;
+  }
+}
+
+@media (min-width: 480px) {
+  .homeListItem > br {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .homeTop {
+    gap: 20px;
+    margin-bottom: 10px;
+  }
+  .homeTopLogo {
+    width: 130px;
+  }
+  .homeTopLogoText {
+    display: none;
+  }
+  .homeTopTimeText {
+    font-size: 18px;
+  }
+  .homeTopLine {
+    height: 26px;
+    width: 3px;
+  }
+  .giftBox {
+    margin-bottom: 18px;
+    gap: 11px;
+    padding-left: 10px;
+  }
+
+  .giftImg {
+    max-width: 50px;
+    object-fit: contain;
+  }
+
+  .gifyTitle {
+    font-size: 11px;
+  }
+
+  .homeContainer {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .homeTitle {
+    font-size: 26px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    max-width: 294px;
+    line-height: 32px;
+  }
+
+  .descText {
+    font-size: 16px;
+    padding-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .homeSignUpBtn {
+    font-size: 28px;
+    height: 70px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 11px;
+  }
+
+  .homeText {
+    padding-top: 0px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 12px;
+  }
+
+  .homeListItem > svg {
+    min-width: 60px;
+  }
+
+  .homeListItem {
+    font-size: 16px;
+    line-height: 24px;
+    align-items: center;
+  }
+}
