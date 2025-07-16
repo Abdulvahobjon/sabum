@@ -107,7 +107,7 @@ button {
 }
 
 .descText > span {
-  color: #f80000;
+  color: #00a494;
 }
 
 .homeTitle {
@@ -122,7 +122,7 @@ button {
 }
 
 .homeTitle span {
-  color: #023f72;
+  color: #00a494;
 }
 
 .homeText {
@@ -160,14 +160,14 @@ button {
 }
 
 .homeListItem > p > span {
-  color: #000000;
+  color: #00a494;
 }
 
 .homeSignUpBtn {
   max-width: 578px;
   width: 100%;
   padding: 20px;
-  background: #344584;
+  background: linear-gradient(180deg, #00a494 0%, #003e38 100%);
   border-radius: 50px;
   font-family: Neue Montreal, sans-serif;
   font-weight: 700;
@@ -239,7 +239,7 @@ button {
 }
 
 .gifyTitle > b {
-  color: #024177;
+  color: #00A494;
   font-weight: 700;
 }
 
@@ -391,7 +391,7 @@ button {
 
 @media (max-width: 480px) {
   .onlyMobile > span {
-    color: #023f72;
+    color: #00a494;
   }
   .onlyMobile {
     display: block;
@@ -482,7 +482,7 @@ button {
     padding-bottom: 12px;
   }
 
-  .homeList{
+  .homeList {
     max-width: 345px;
     margin-left: auto;
     margin-right: auto;
@@ -519,7 +519,7 @@ button {
   .homeTitle {
     font-size: 28px;
   }
-  .giftBox{
+  .giftBox {
     padding-left: 10px;
     padding-right: 0;
   }
