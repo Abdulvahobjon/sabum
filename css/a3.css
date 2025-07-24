@@ -506,7 +506,41 @@ ul {
   display: none;
 }
 
+.giftBox {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  max-width: 578px;
+  padding: 8px 11px 8px 24px;
+  border: 1px solid #bcbcbc;
+  border-radius: 10px;
+  margin-top: 34px;
+  width: 100%;
+}
+
+.giftImg {
+  max-width: 85px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.gifyTitle {
+  font-family: Neue Montreal;
+  font-weight: 500;
+  font-style: Bold;
+  font-size: 18px;
+  line-height: 180%;
+}
+
+.deskHidden{
+  display: none;
+}
+
+
 @media screen and (max-width: 768px) {
+  .deskHidden{
+    display: flex;
+  }
   .date__img{
     display: flex;
   }
@@ -691,6 +725,28 @@ ul {
   .date__inner-info {
     margin-bottom: 33px;
   }
+
+   .giftBox {
+    margin-bottom: 18px;
+    gap: 11px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 0px;
+    max-width: 345px;
+    width: 100%;
+  }
+
+  .giftImg {
+    max-width: 50px;
+    height: 40px;
+    object-fit: contain;
+  }
+
+  .gifyTitle {
+    font-size: 11px;
+    line-height: 130%;
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -740,6 +796,7 @@ ul {
     max-height: 50px;
     margin-top: 24px;
   }
+   
 }
 
 @media screen and (max-width: 375px) {
@@ -750,6 +807,14 @@ ul {
 
 .mb-20 {
   margin-bottom: 20px;
+}
+
+@media (max-width: 362px) {
+ 
+  .giftBox {
+    padding-left: 10px;
+    padding-right: 0;
+  }
 }
 
 @media screen and (max-width: 350px) {

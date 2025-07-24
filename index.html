@@ -193,11 +193,7 @@
         <div class="date__inner">
           <div class="date__top">
             <div class="">
-              <img
-                src="./images/logoWhite.png"
-                alt="SABUM logo"
-                class="logo"
-              />
+              <img src="./images/logoWhite.png" alt="SABUM logo" class="logo" />
               <p class="homeTopLogoText">Onlayn taqdimoqti</p>
             </div>
             <div class="date__top-left">
@@ -208,8 +204,8 @@
           <h2 class="date__inner-title">Qo’qonda bunaqasi hali bo’lmagan</h2>
           <div class="date__inner-info">
             <p class="date__inner-info-text">
-              Qo‘qon markazidan bosh to‘lovsiz, kreadit foizlarsiz 60 oyga bo‘lib
-              to‘lashga xonadonlar xarid qilish imkoniyati
+              Qo‘qon markazidan bosh to‘lovsiz, kreadit foizlarsiz 60 oyga
+              bo‘lib to‘lashga xonadonlar xarid qilish imkoniyati
             </p>
           </div>
           <h4 class="date__inner-title4">Aksiyada qatnashib:</h4>
@@ -235,7 +231,21 @@
             >
               >>> BEPUL QATNASHISH <<<
             </a>
-            <div class="date__timer" id="timer">02:00</div>
+          </div>
+          <div class="giftBox deskHidden">
+            <img
+              src="../images/gift.webp"
+              alt="gift"
+              class="giftImg"
+              width="85"
+              height="85"
+            />
+            <div>
+              <h3 class="gifyTitle">
+                Faqat vebinar ishtirokchilari uchun —
+                <b> 2 ta uy sovg‘a qilamiz! </b>
+              </h3>
+            </div>
           </div>
           <div class="freeText">Bepul qatnashish uchun bosing</div>
         </div>
@@ -249,27 +259,5 @@
       </div>
       <div class="date_gradient"></div>
     </div>
-
-    <script>
-      let duration = 2 * 60; // 2 daqiqa = 120 soniya
-      const timerElement = document.getElementById("timer");
-
-      const countdown = setInterval(() => {
-        let minutes = Math.floor(duration / 60);
-        let seconds = duration % 60;
-
-        // Formatlash: 01:09 ko‘rinishida bo‘lishi uchun
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-
-        timerElement.textContent = `${minutes}:${seconds}`;
-        duration--;
-
-        if (duration < 0) {
-          clearInterval(countdown);
-          timerElement.textContent = "00:00";
-        }
-      }, 1000);
-    </script>
   </body>
 </html>
