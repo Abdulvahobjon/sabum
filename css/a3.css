@@ -236,6 +236,7 @@ ul {
   height: 746px;
   right: 262px;
   object-fit: cover;
+  z-index: 30;
 }
 
 .date__img-wrapper {
@@ -502,7 +503,7 @@ ul {
     height: 400px;
   }
 }
-.date__img{
+.date__img {
   display: none;
 }
 
@@ -532,22 +533,21 @@ ul {
   line-height: 180%;
 }
 
-.deskHidden{
+.deskHidden {
   display: none;
 }
 
-
 @media screen and (max-width: 768px) {
-  .deskHidden{
+  .deskHidden {
     display: flex;
   }
-  .date__img{
+  .date__img {
     display: flex;
   }
-  .date{
+  .date {
     background-image: none;
   }
-  .date__container{
+  .date__container {
     overflow: hidden;
   }
   .date__inner-title {
@@ -665,7 +665,7 @@ ul {
     max-width: 227px;
     gap: 5px;
   }
-  .date__inner-item{
+  .date__inner-item {
     margin-bottom: 5px !important;
   }
   .date__inner-item:nth-child(2) {
@@ -674,19 +674,16 @@ ul {
   .date__inner-item:last-child {
     max-width: 179px;
   }
-  .date__bottom {
-    flex-direction: column-reverse;
-    align-items: start;
-    z-index: 20;
-  }
+
   .date__bottom-btn {
     margin-top: 15px;
     padding: 22px 0;
     width: 100%;
     max-width: 331px;
     margin-right: 0;
+    margin-top: -30px;
   }
-  .freeText{
+  .freeText {
     font-size: 16px;
   }
   .date__img {
@@ -695,6 +692,7 @@ ul {
     top: 270px;
     width: 217px;
     height: 314px;
+    z-index: 20;
   }
   .date__img-wrapper {
     width: 375px;
@@ -719,21 +717,33 @@ ul {
   .disclaimer > br {
     display: none;
   }
-  .date__inner-info-text{
+  .date__inner-info-text {
     font-size: 12px;
   }
   .date__inner-info {
     margin-bottom: 33px;
   }
 
-   .giftBox {
+  .date__bottom {
+    flex-direction: column-reverse;
+    align-items: start;
+    padding-top: 90px;
+    position: relative;
+  }
+
+  .giftBox {
     margin-bottom: 18px;
     gap: 11px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 4px;
+    padding-right: 13px;
     margin-top: 0px;
-    max-width: 345px;
+    max-width: 216px;
     width: 100%;
+    position: absolute;
+    z-index: 10;
+    top: -10px;
+    left: 0;
+    gap: 0;
   }
 
   .giftImg {
@@ -743,9 +753,16 @@ ul {
   }
 
   .gifyTitle {
-    font-size: 11px;
+    font-size: 12px;
     line-height: 130%;
     text-align: left;
+    span{
+      color: #FF9D00;
+    }
+  }
+  .date__inner-list{
+    position: relative;
+    z-index: 40;
   }
 }
 
@@ -796,7 +813,6 @@ ul {
     max-height: 50px;
     margin-top: 24px;
   }
-   
 }
 
 @media screen and (max-width: 375px) {
@@ -810,7 +826,6 @@ ul {
 }
 
 @media (max-width: 362px) {
- 
   .giftBox {
     padding-left: 10px;
     padding-right: 0;
